@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: none;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.text-overlay {
+  position: absolute;
+  background-color: white;
+  top: 20%;
+  left: 15%;
+  max-width: 600px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.text-top {
+  background-color: rgb(75, 131, 252);
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .text-overlay {
+    position: absolute;
+    background-color: white;
+    top: 20%;
+    left: 15%;
+    max-width: 45%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  .flex-middle {
+    display: block;
+  }
+  .octf-btn {
+    padding: 10px;
+    font-size: 9px;
+  }
+}

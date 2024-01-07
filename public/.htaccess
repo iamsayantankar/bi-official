@@ -1,0 +1,23 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^internship internship.php
+RewriteRule ^Get-Brochure BetaZen-InfoTech-Bro-v1.0.0.pdf
+RewriteRule ^AcceptableUsePolicy /Legal/AcceptableUsePolicy.html
+RewriteRule ^CookiesPolicy Legal/CookiesPolicy.html
+RewriteRule ^Disclamer Legal/Disclamer.html
+RewriteRule ^EULA Legal/EULA.html
+RewriteRule ^PrivacyPolicy Legal/PrivacyPolicy.html
+RewriteRule ^RefundPolicy Legal/RefundPolicy.html
+RewriteRule ^TermsConditions Legal/TermsConditions.html
+RewriteCond %{REQUEST_FILENAME}.pdf -f
+RewriteRule !.*\.pdf$ %{REQUEST_FILENAME}.pdf [QSA,L]
+
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]

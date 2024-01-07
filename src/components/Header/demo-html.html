@@ -1,0 +1,246 @@
+<div className="header_mobile">
+          <div className="container">
+            <div className="row">
+              <div className="col-5">
+                <div className="mobile_logo">
+                  <Link to="/">
+                    <img src="images/logo_black.png" alt />
+                  </Link>
+                </div>
+              </div>
+              <div className="col-7 align-self-center text-right">
+                <div className="octf-btn-cta">
+                  <div className="octf-search-mobile octf-search octf-cta-header">
+                    <div className="toggle_search octf-cta-icons">
+                      <i className="ot-flaticon-search-1"></i>
+                    </div>
+                    {/* <!-- Form Search on Header --> */ }
+                    <div className="h-search-form-field collapse">
+                      <div className="h-search-form-inner">
+                        <form
+                          role="search"
+                          method="get"
+                          className="search-form"
+                        >
+                          <input
+                            type="search"
+                            className="search-field"
+                            placeholder="Search..."
+                            name="s"
+                          />
+                          <button type="submit" className="search-submit">
+                            <i className="ot-flaticon-search-1"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="octf-menu-mobile octf-cta-header text-left">
+                    <div
+                      id="mmenu-toggle"
+                      className={ `mmenu-toggle ${ isMobileMenuOpen ? "active" : ""
+                        }` }
+                      onClick={ toggleMobileMenu }
+                    >
+                      <button>
+                        <i className="ot-flaticon-menu"></i>
+                      </button>
+                    </div>
+                    <div className="site-overlay mmenu-overlay"></div>
+                    <div
+                      id="mmenu-wrapper"
+                      className={ `mmenu-wrapper on-right ${ isMobileMenuOpen ? "mmenu-open" : ""
+                        }` }
+                    >
+                      <div className="mmenu-inner">
+                        <a
+                          href="#"
+                          className="mmenu-close"
+                          onClick={ toggleMobileMenu }
+                        >
+                          <i className="ot-flaticon-arrowsoutline"></i>
+                        </a>
+                        <div className="mobile-nav">
+                          <ul
+                            id="menu-mobile-main-menu"
+                            className="mobile_mainmenu none-style"
+                          >
+                            <li
+                              className="menu-item-has-children"
+                              onClick={ toggleMobileMenu }
+                            >
+                              <Link to="/">Hom1e</Link>
+
+                              <ul className="sub-menu">
+                                <li>
+                                  <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                  <Link to="/">Home Consulting</Link>
+                                </li>
+                                <li>
+                                  <a href="index-4.html">Home Business</a>
+                                </li>
+                                <li>
+                                  <a href="index-5.html">Home Corporate</a>
+                                </li>
+                                <li>
+                                  <a href="index-6.html">Home Finance</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li
+                              className="menu-item-has-children"
+                              onClick={ toggleMobileMenu }
+                            >
+                              {/* <a href="#">Pages</a> */ }
+                              <Link to="/aboutus">Pages</Link>
+                              <ul className="sub-menu">
+                                <li>
+                                  <Link to="/aboutus">About Us</Link>
+                                </li>
+                                <li>
+                                  <Link to="/service">Our Services</Link>
+                                </li>
+                                <li>
+                                  <a href="service-2.html">Our Services 2</a>
+                                </li>
+                                <li>
+                                  <a href="core-values.html">Our Core Values</a>
+                                </li>
+                                <li>
+                                  <Link to="/ourteam">Our Team</Link>
+                                </li>
+                                <li>
+                                  <Link to="/singleteam">Single Team</Link>
+                                </li>
+                                <li className="menu-item-has-children">
+                                  <a href="#">Shop</a>
+                                  <ul className="sub-menu">
+                                    <li>
+                                      <a href="#">Product Catalog</a>
+                                    </li>
+                                    <li>
+                                      <a href="single-product.html">
+                                        Single Product
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="cart-page.html">Cart</a>
+                                    </li>
+                                    <li>
+                                      <a href="checkout-page.html">Checkout</a>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                  <Link to="/faq">FAQS</Link>
+                                </li>
+                                <li>
+                                  <a href="404-error.html">404</a>
+                                </li>
+                                <li>
+                                  <a href="cooming-soon.html">Coming Soon</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li
+                              className="menu-item-has-children"
+                              onClick={ toggleMobileMenu }
+                            >
+                              {/* <a href="#">Portfolio</a> */ }
+                              <Link to="/portfoliodetails">Portfolio</Link>
+                              <ul className="sub-menu">
+                                <li>
+                                  <a href="portfolio-grid.html">
+                                    Portfolio Grid
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="portfolio-masonry.html">
+                                    Portfolio Masonry
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="portfolio-carousel.html">
+                                    Portfolio Carousel
+                                  </a>
+                                </li>
+                                <li>
+                                  <Link to="/portfoliodetails">
+                                    Portfolio Details
+                                  </Link>
+                                </li>
+                              </ul>
+                            </li>
+                            <li
+                              className="menu-item-has-children"
+                              onClick={ toggleMobileMenu }
+                            >
+                              <Link to="/service">Our Services</Link>
+                              <ul className="sub-menu">
+                                <li>
+                                  <Link to="/servicedetail1">
+                                    Marketing Research
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to="/servicedetail2">
+                                    Organizational Audit
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to="/servicedetail3">
+                                    Business Consulting
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to="/servicedetail4">
+                                    Project Management
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to="/servicedetail5">
+                                    Support Functions
+                                  </Link>
+                                </li>
+                                <li>
+                                  <Link to="/servicedetail6">
+                                    Finance Planning
+                                  </Link>
+                                </li>
+                              </ul>
+                            </li>
+                            <li
+                              className="menu-item-has-children"
+                              onClick={ toggleMobileMenu }
+                            >
+                              <Link to="/blog">Blog</Link>
+                              <ul className="sub-menu">
+                                <li>
+                                  <Link to="/blog">Blog Listing</Link>
+                                </li>
+                                <li>
+                                  <Link to="/post">Blog Post</Link>
+                                </li>
+                              </ul>
+                            </li>
+                            <li
+                              className="current-menu-item"
+                              onClick={ toggleMobileMenu }
+                            >
+                              <Link to="/contact">Contact</Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
