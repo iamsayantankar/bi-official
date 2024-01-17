@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /js/
+Disallow: /css/
+Disallow: /Legal/
+Sitemap: https://betazeninfotech.com/sitemap.xml
